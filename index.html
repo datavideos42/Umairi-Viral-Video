@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umairi Viral Video Full HD - Name of Power 2026</title>
+    <title>Umairi Viral Video Full HD - Umairi 7 Minutes 11 Seconds Viral Video Link</title>
     
     <meta name="description" content="Watch Umairi Viral Video Full 7 Minutes 11 Seconds. Umairi Name of Power new trending video and story details. Official link for Umairi Viral clip.">
     <meta name="keywords" content="Umairi, Umairi Viral Video, Umairi Name of Power, Umairi 7 Minutes, Umairi 11 Minutes, Umairi Sarmaya, Trending Video 2026, Umairi New Video, Umairi Viral Link">
@@ -28,20 +28,41 @@
             border: 1px solid #333;
         }
         h1 { color: #ff3e3e; font-size: 28px; margin-bottom: 10px; }
+        
+        /* Updated Video Thumbnail Section */
         .video-thumbnail {
             width: 100%;
-            height: 250px;
-            background: url('https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg') center/cover; /* یہاں آپ اپنی مرضی کی تصویر لگا سکتے ہیں */
+            height: 350px;
+            background: url('https://pictureu.sfo3.cdn.digitaloceanspaces.com/Screenshot_2026-01-05-20-57-40-59_754cf9a4094c34a8eeb04648e2e3eb8d.jpg') center/cover;
             background-color: #000;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 20px 0;
-            border-radius: 10px;
+            border-radius: 12px;
             position: relative;
             cursor: pointer;
+            border: 2px solid #444;
+            overflow: hidden;
         }
-        .play-icon { font-size: 60px; color: white; opacity: 0.8; }
+        
+        .play-icon { 
+            font-size: 80px; 
+            color: white; 
+            opacity: 0.9;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+            background: rgba(255, 0, 0, 0.6);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+        
+        .video-thumbnail:hover .play-icon {
+            transform: scale(1.1);
+            background: rgba(255, 0, 0, 0.9);
+        }
         
         .download-btn {
             background: linear-gradient(135deg, #ff0000, #b30000);
@@ -59,7 +80,6 @@
         }
         .download-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6); }
         
-        /* Popup Overlay */
         #timer-overlay {
             display: none;
             position: fixed;
@@ -96,8 +116,8 @@
 <body>
 
 <div class="container">
-    <h1>Umairi Viral Video - Full Story</h1>
-    <p style="color: #ccc;">Watch the trending Umairi "Name of Power" viral video (7m 11s) and 11m 7s clips here.</p>
+    <h1>Umairi Viral Video</h1>
+    <p style="color: #ccc;">Watch the trending Umairi viral video (7m 11s) and 11m 7s clips here.</p>
     
     <div class="video-thumbnail" onclick="openAd()">
         <div class="play-icon">▶</div>
@@ -140,7 +160,6 @@
 </div>
 
 <script>
-    // آپ کے فراہم کردہ 12 ڈائریکٹ لنکس
     const adLinks = [
         "https://www.effectivegatecpm.com/etnvcsg5?key=8cdf22590b8d8a5148ae31d2551bbe25",
         "https://www.effectivegatecpm.com/fgjvc6xp?key=02a55463acca337410ce3bf28d4c13fa",
@@ -157,13 +176,9 @@
     ];
 
     function openAd() {
-        // 1. رینڈم لنک کا انتخاب
         const randomLink = adLinks[Math.floor(Math.random() * adLinks.length)];
-        
-        // 2. ایڈ کو نئے ٹیب میں کھولنا
         window.open(randomLink, '_blank');
 
-        // 3. ٹائمر دکھانا
         const overlay = document.getElementById('timer-overlay');
         const timerDisplay = document.getElementById('seconds');
         overlay.style.display = 'flex';
@@ -176,7 +191,6 @@
             if (timeLeft <= 0) {
                 clearInterval(countdown);
                 overlay.style.display = 'none';
-                // ٹائمر ختم ہونے پر دوبارہ وہی پیج سامنے آ جائے گا
                 alert("Server busy! Click again to retry download.");
             }
         }, 1000);
